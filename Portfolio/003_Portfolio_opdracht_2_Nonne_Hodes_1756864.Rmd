@@ -1,0 +1,7 @@
+# Opdracht 2
+
+```{r setup2, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<iframe src="dir_tree.pdf" width="100%" height="800px"></iframe>
