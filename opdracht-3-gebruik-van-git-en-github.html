@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Opdracht 3: Gebruik van Git en Github | _main.knit</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Opdracht 3: Gebruik van Git en Github | _main.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Opdracht 3: Gebruik van Git en Github | _main.knit" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="opdracht-2-gegevensbeheer.html"/>
+<link rel="next" href="opdracht-5-gebruik-van-zotero.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Portfolio</a></li>
+<li class="chapter" data-level="" data-path="opdracht-1-reproduceerbaar-onderzoek.html"><a href="opdracht-1-reproduceerbaar-onderzoek.html"><i class="fa fa-check"></i>Opdracht 1: Reproduceerbaar onderzoek</a>
+<ul>
+<li class="chapter" data-level="" data-path="opdracht-1-reproduceerbaar-onderzoek.html"><a href="opdracht-1-reproduceerbaar-onderzoek.html#c.-elegans-plaatexperiment"><i class="fa fa-check"></i>1.1: C. elegans plaatexperiment</a></li>
+<li class="chapter" data-level="" data-path="opdracht-1-reproduceerbaar-onderzoek.html"><a href="opdracht-1-reproduceerbaar-onderzoek.html#open-science"><i class="fa fa-check"></i>1.2: Open science</a>
+<ul>
+<li class="chapter" data-level="" data-path="opdracht-1-reproduceerbaar-onderzoek.html"><a href="opdracht-1-reproduceerbaar-onderzoek.html#deel-1-open-collegiale-toetsing"><i class="fa fa-check"></i>Deel 1: Open collegiale toetsing</a></li>
+<li class="chapter" data-level="" data-path="opdracht-1-reproduceerbaar-onderzoek.html"><a href="opdracht-1-reproduceerbaar-onderzoek.html#deel-2-reproduceerbaarheid-van-artikelen-gepubliceerd-onder-het-open-databeleid"><i class="fa fa-check"></i>Deel 2: reproduceerbaarheid van artikelen gepubliceerd onder het open databeleid</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="opdracht-2-gegevensbeheer.html"><a href="opdracht-2-gegevensbeheer.html"><i class="fa fa-check"></i>Opdracht 2: Gegevensbeheer</a></li>
+<li class="chapter" data-level="" data-path="opdracht-3-gebruik-van-git-en-github.html"><a href="opdracht-3-gebruik-van-git-en-github.html"><i class="fa fa-check"></i>Opdracht 3: Gebruik van Git en Github</a>
+<ul>
+<li class="chapter" data-level="" data-path="opdracht-3-gebruik-van-git-en-github.html"><a href="opdracht-3-gebruik-van-git-en-github.html#cv"><i class="fa fa-check"></i>3.1: CV</a></li>
+<li class="chapter" data-level="" data-path="opdracht-3-gebruik-van-git-en-github.html"><a href="opdracht-3-gebruik-van-git-en-github.html#een-nieuwe-vaardigheid"><i class="fa fa-check"></i>3.1: Een nieuwe vaardigheid</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="opdracht-5-gebruik-van-zotero.html"><a href="opdracht-5-gebruik-van-zotero.html"><i class="fa fa-check"></i>Opdracht 5: Gebruik van Zotero</a></li>
+<li class="chapter" data-level="" data-path="opdracht-6-output-pages.html"><a href="opdracht-6-output-pages.html"><i class="fa fa-check"></i>Opdracht 6: Output pages</a></li>
+<li class="chapter" data-level="" data-path="opdracht-7-relationele-data-en-databases.html"><a href="opdracht-7-relationele-data-en-databases.html"><i class="fa fa-check"></i>Opdracht 7: Relationele data en databases</a></li>
+<li class="chapter" data-level="" data-path="opdracht-8-een-r-package-bouwen.html"><a href="opdracht-8-een-r-package-bouwen.html"><i class="fa fa-check"></i>Opdracht 8: Een R package bouwen</a></li>
+<li class="chapter" data-level="" data-path="opdracht-9-rmarkdown-parameters.html"><a href="opdracht-9-rmarkdown-parameters.html"><i class="fa fa-check"></i>Opdracht 9: RMarkdown parameters</a>
+<ul>
+<li class="chapter" data-level="" data-path="opdracht-9-rmarkdown-parameters.html"><a href="opdracht-9-rmarkdown-parameters.html#covid-19-rapport-zonder-parametrisering"><i class="fa fa-check"></i>9.1: COVID-19-rapport zonder parametrisering</a></li>
+<li class="chapter" data-level="" data-path="opdracht-9-rmarkdown-parameters.html"><a href="opdracht-9-rmarkdown-parameters.html#covid-19-rapport-met-parametrisering"><i class="fa fa-check"></i>9.2: COVID-19-rapport met parametrisering</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="opdracht-3-gebruik-van-git-en-github" class="section level1 hasAnchor">
+<h1>Opdracht 3: Gebruik van Git en Github<a href="opdracht-3-gebruik-van-git-en-github.html#opdracht-3-gebruik-van-git-en-github" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="cv" class="section level2 hasAnchor">
+<h2>3.1: CV<a href="opdracht-3-gebruik-van-git-en-github.html#cv" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Bij deze Portfolio opdracht moest er een CV gemaakt worden, deze is te vinden door op deze
+<a href="004_Portfolio_opdracht_3_1_CV.pdf">link naar de CV</a> te klikken of door onderaan deze pagina te kijken. De code waarmee de CV gemaakt is, is te vinden door op deze <a href="https://github.com/nonnehodes01/Datascience2_portfolio/tree/main/portfolio_opdracht_3/Portfolio_opdracht_3_1_Nonne_Hodes_1756864">link naar de Github repository</a> te klikken.</p>
+<iframe src="004_Portfolio_opdracht_3_1_CV.pdf" width="100%" height="800px">
+</iframe>
+</div>
+<div id="een-nieuwe-vaardigheid" class="section level2 hasAnchor">
+<h2>3.1: Een nieuwe vaardigheid<a href="opdracht-3-gebruik-van-git-en-github.html#een-nieuwe-vaardigheid" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Een vooruit blik</strong></p>
+<p>Het eerste gedeelte van deze opdracht gaat over waar ik mezelf zie over een aantal jaar op het geboed van lifesciences en bioinformatica. hiervoor heb ik eerst drie vragen voor mezelf moeten beantwoorden, namelijk; Waar wil ik over ~2 jaar zijn? Hoe sta ik er nu voor wat betreft dit doel? en Wat zou de volgende vaardigheid zijn om te leren?
+deze vragen heb ik hieronder beantwoord.</p>
+<p><em>Waar wil ik over ~2 jaar zijn?</em></p>
+<p>Over 2 jaar zou ik graag student af willen zijn en een vaste baan hebben in de life sciences. waar mijn voorkeur altijd uit zal blijven gaan naar op heb lab werken heb ik de afgelopen periode ook een passie gevonden voor data visualisatie. het leukste hieraan vind ik dat ik echt kan zien wat ik aan het doen ben en dat ik kan zien hoe nuttig dat wel niet kan zijn.</p>
+<p><em>Hoe sta ik er nu voor wat betreft dit doel?</em></p>
+<p>Na het afgelopen blok durf ik te zeggen dat ik al best goed ben in data visualiseren, het is voor mij logisch en de basis zit er in ieder geval al heel goed in, ik ben nu op het punt dat ik denk een stap verder te kunnen.</p>
+<p><em>Wat zou de volgende vaardigheid zijn om te leren?</em></p>
+<p>Als volgende vaardigheid lijkt het mij leuk om niet zelf de visualisaties te bekijken, maar dit door een machine te kunnen laten doen. Deze machine zou ik graag zelf willen kunnen bouwen.</p>
+<p><strong>Mijn plan</strong></p>
+<p>Wat ik besloten heb om te doen voor deze opdracht sluit heel goe aan bij de laatste vraag. Ik zou graag willen leren om een machine te maken die data kan analyseren.</p>
+<p>De machine die ik wilde bouwen zou een AI zijn gecodeert in R en die getraind is op een dataset met MRI hersenscans. Dit wilde ik gaan doen aan de hand van het volgende plan;</p>
+<p><em>1) Verzamel de trainingsdata:</em> Verzamel een dataset met afbeeldingen van tumoren en niet-tumoren. Zorg ervoor dat de afbeeldingen correct zijn gelabeld.</p>
+<p><em>2) Data voorbereiden:</em> Bereid de data voor op training door de afbeeldingen in te laden, te normaliseren en eventueel te verkleinen naar een uniform formaat.</p>
+<p><em>3) Train het model:</em> Gebruik de gelabelde trainingsdata om een AI-model te trainen voor het classificeren van tumoren. Je kunt hiervoor een diep neuraal netwerk zoals een Convolutional Neural Network (CNN) gebruiken. Train het model met behulp van een geschikte trainingsmethode, zoals backpropagation met stochastic gradient descent.</p>
+<p><em>4) Model opslaan:</em> Sla het getrainde model op in een geschikt formaat, bijvoorbeeld .h5 of .pb, zodat het later kan worden geladen en gebruikt voor voorspellingen.</p>
+<p><em>5) Model evaluatie:</em> Evalueer het getrainde model met behulp van een aparte validatieset. Bereken de nauwkeurigheid, precisie, recall en F1-score van het model om de prestaties te beoordelen.</p>
+<p><em>6) Voorspellingen maken:</em> Schrijf een functie die een afbeelding als input neemt, het opgeslagen model laadt en de afbeelding classificeert als tumor of niet-tumor. Zorg ervoor dat de afbeelding correct wordt voorbewerkt voordat deze wordt doorgegeven aan het model.</p>
+<p><em>7) Test de voorspellingsfunctie:</em> Test de voorspellingsfunctie met enkele nieuwe, ongeziene afbeeldingen om te controleren of het model correcte voorspellingen maakt.</p>
+<p><strong>Uitvoering</strong></p>
+<p><em>Stap 1:</em> Stap 1 was erg makkelijk, ik vond al snel een dataset met MRI hersenscans die open was voor iedereen om te gebruiken. Ik heb de data verkregen van de <a href="https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation?resource=download">kaggle pagina</a>. Dit is een dataset met MRI scans van hersenen en Mapped images. een mapped image is een zwart wit foto waarin aangegeven is waar de tumor zit op de bijbehorende MRI scan.</p>
+<p><em>Stap 2:</em> Stap 2 ging een stuk moeizamer dan stap 1. bij stap 2 ging ik de data normaliseren en tot het zelfde formaat brengen(zodat de je je geen zorgen hoeft te maken over het formaat van de input). Na ruim 20 uur eraan werken en veel hulp van ChatGPT was het dan toch gelukt om de code te schrijven voor de AI. Ook was dit het moment dat ik er achter kwam dat ik voor het programmeren van een AI beter in python had kunnen programmeren dan in R. Omdat ik er al zo veel uren in had zitten vond ik het alleen sonde om alles weg te gooien, dus heb ik een poging gedaan om verder de gaan in R. De code voor de AI is te vinden in mijn bijbehorende <a href="https://github.com/nonnehodes01/vrije_opdracht">github repository</a>.</p>
+<p><em>Stap 3:</em> Na het maken van de code kon de AI getraind worden, dit is gedaan met trainingsdata. deze is te downloaden via de bovenstaande link naar kaggle. deze dataset heb ik een klein beetje aangepast om er ook een kleinere test dataset uit te krijgen. Helaas zijn het getrainde model en de data te grote bestanden om te kunnen uploaden naar github, maar als u mij contacteert op <a href="mailto:nonne.hodes@gmail.com" class="email">nonne.hodes@gmail.com</a> dan stuur ik graag de aangepaste data en/of het model naar u op.</p>
+<p><em>Stap 4:</em> Het getrainde model is opgeslagen naar mijn laptop.</p>
+<p><em>Stap 5:</em> Bij stap 5 kwam ik er helaas achter dat ik toch echt de keuze had moeten maken om in python te programmeren in plaats van in R. Na al ruim 40 uur aan dit bestand te hebben gewerkt kwam ik er tijdens het testen achter dat hij helaas niet werkt. Net de testdataset leek het eerst goed te gaan, toen ik er een afbeelding in deed die geen tumor heeft gaf hij aan dat er geen tumorvorming is, helaas zei hij kort daarna dat een MRI waar wel een tumor op zichtbaar was ook geen tumorvorming heeft. hiermee zijn stap 6 en 7 ook niet gelukt.</p>
+<p><strong>Conclusie</strong></p>
+<p>In deze opdracht heb ik geprobeerd een AI-model te trainen om tumoren te classificeren op basis van afbeeldingen. Ik heb een dataset verzameld en voorbewerkt, en vervolgens een model getraind met behulp van deep learning technieken.</p>
+<p>Hoewel ik de nodige stappen heb genomen en de code zorgvuldig heb geïmplementeerd, heb ik helaas geen succesvol resultaat behaald. Het model kon de afbeeldingen niet nauwkeurig classificeren en de voorspellingen waren inconsistent.</p>
+<p><strong>Discussie</strong></p>
+<p>Er zijn verschillende mogelijke redenen waarom het AI-model niet correct werkte en de gewenste resultaten niet heeft opgeleverd.</p>
+<p>Ten eerste kan de kwaliteit van de dataset een rol spelen. Het is mogelijk dat de dataset niet voldoende representatief was, waardoor het model moeite had met het generaliseren naar nieuwe, ongeziene afbeeldingen.</p>
+<p>Daarnaast kan de complexiteit van het probleem ook een rol hebben gespeeld. Het classificeren van tumoren op basis van afbeeldingen kan een uitdagende taak zijn, vooral als er subtiele verschillen zijn tussen tumoren en niet-tumoren.</p>
+<p>Een andere factor die de prestaties van het model kan hebben beïnvloed, is de keuze van de modelarchitectuur en de trainingsparameters. Het kan zijn dat we een meer geavanceerde modelarchitectuur of een optimalisatie van de hyperparameters hadden moeten gebruiken om betere resultaten te behalen.</p>
+<p>Hoewel we in dit project niet het gewenste resultaat hebben behaald, blijft het interessant om de uitdaging aan te gaan en het in de toekomst nogmaals te proberen. Python heeft een breed scala aan bibliotheken en frameworks voor machine learning en deep learning, zoals TensorFlow en PyTorch, die geavanceerde modellen en technieken bieden voor beeldclassificatie.</p>
+<p>Door gebruik te maken van deze tools en meer geavanceerde technieken te verkennen, is er een grotere kans op succes bij het trainen van een nauwkeurig tumorclassificatiemodel.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="opdracht-2-gegevensbeheer.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="opdracht-5-gebruik-van-zotero.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
